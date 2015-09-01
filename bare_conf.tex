@@ -389,14 +389,10 @@ Fax: (888) 555--1212}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Sentiment analysis aims to identify the attitudes or emotions behind texts. For many sentiment analysis approaches, sentiment information of terms or phrases plays an important role. However, in Chinese sentiment analysis, the coverage of such information is still limited. To increase the coverage, some methods has been developed to predict sentiments for nodes in Chinese ConceptNet due to its large size and high semantic level nodes. In ConceptNet, the notion of a node is extended from purely lexical terms to include higher-order compound concepts, e.g., 'eat lunch', 'satisfy hunger', so these nodes are called concepts. 
-
-Current approaches aim to assign one sentiment to each concept, but in fact a concept may have different sentiments on different contexts, such as 'scream' and 'sudden' in Chinese. In this paper, our first goal is to extract the hidden contextual information in Chinese ConceptNet and use it to estimate sentiments in different situations for each concept. To achieve this goal, we propose a topic-aware sentiment propagation approach. We apply Latent Dirichlet Allocation to divide Chinese ConceptNet into different topic layers and use sentiment propagation on each topic layer to predict topic-aware sentiments for Chinese concepts. Our another goal is to use the generated topic-aware sentiments of concepts to improve the polarity classification for texts. We combine other co-occurring concepts to identify topics and select sentiments for concepts in texts. Then, experiments conducted on dialogue dataset and microblog posts show the improvement of topic-aware prediction for concepts and texts. 
+\input{abstract}
 \end{abstract}
 
 % no keywords
-
-
 
 
 % For peer review papers, you can put extra information on the cover
@@ -410,197 +406,32 @@ Current approaches aim to assign one sentiment to each concept, but in fact a co
 \IEEEpeerreviewmaketitle
 
 
-
 \section{Introduction}
-With the rise of social media services, more and more people share their opinions, feelings, experiences on the web. The roles of users shift from information consumers to information producers. To understand the attitudes and emotions behind these texts, sentiment analysis has become a popular research topic in recent years. 
-
-Sentiment dictionaries tell machine how a writer or speaker may feel when using some term or phrase. They are important elements for several sentiment analysis approaches~\cite{Taboada:lexiconBased11, Rao:WWW14, Wen:AAAI14, Lee:IJCNLP2011}, but in Chinese, they are relatively scarce or non-public. As the result, it is helpful to collect the sentiment information in Chinese. However, there are two problems in collecting sentiment information. First, its coverage and quality highly affect the performance of sentiment analysis for texts, but collecting the information with high coverage, quality but low cost is challenging. The second problem is that the sentiments of several terms and phrases are context-dependent. How to define context, collect the sentiments on different contexts efficiently and decide which context and sentiment should be used to predict sentiments of texts are challenges.
-
-For the first problem, several approaches~\cite{Strapparava:IREC04, Esuli:LREC06, Liu:IUI03, Cambria:AAAI10, Wu:TAAI11, Tsai:IEEE13, Wu:relSelect14} have used the external knowledge such as WordNet~\cite{Miller:WordNet95} and ConceptNet~\cite{Havasi:RANLP07,Speer:LREC12} to build sentiment dictionaries automatically. The relationship information in WordNet and ConceptNet is used to propagate sentiments from some seeds, which had been compiled manually. 
-
-ConceptNet is a semantic network which represents knowledge into more computable representations. The nodes in ConceptNet are called {\it concepts} because the coverage of nodes contains not only lexical terms but also higher-order compound concepts, e.g., 'accomplish goal', 'leave behind'. A directed edge connecting two nodes is called {\it relation}, and is associated with one of the predefined types of labels to represent the semantic relationships between two {\it concepts} in real world, e.g., 'CapableOf', 'Causes'. The former {\it concept}, latter {\it concept} and their {\it relation} form an {\it assertion}, such as ``oven UsedFor cook", ``eat HasSubevent swallow". Because ConceptNet has large amount of {\it concepts} (In Chinese part~\cite{Kuo:HCOMP09,Kuo:FSS10}, there are at least 220000 {\it concepts}, still growing...), and its {\it concepts} have higher semantic meaning than traditional lexical terms, it is a good foundation to build a larger sentiment dictionary. In this paper, we collect sentiments based on {\it concepts} and the structure in Chinese ConceptNet.
-
-However, previous propagation approaches in ConceptNet didn't deal with the issue that a {\it concept}'s neighbors may come from different scenarios. Take Figure~\ref{fig:noWork2} for example, previous approaches aggregate the sentiments from neighbors disregarding their different scenarios, and assign the aggregated sentiment to 'do not have to work'. 'do dot have to work' will propagate this sentiment to all its neighbors in the next iteration, which makes sentiments be propagated between different scenarios.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=2.5in]{fig/noWork2.jpg}
-\caption{Neighbors of 'do not have to work' come from different scenarios.}
-\label{fig:noWork2}
-\end{figure}
-
-The second problem is that each {\it concept} should be assigned different sentiments in different scenarios. For example, 'scream' is more possible to be negative when 'pervert' or 'cockroach' appears, but is more likely to be positive when 'idol' or 'win' appears. Previous approaches ~\cite{Xu:PACLIC10, Xu:COLING10, Rao:WWW14} use domain-specific corpus to modify sentiment value according to the corpus. However, hidden contextual information in Chinese ConceptNet is also abundant, like Figure~\ref{fig:noWork2}. If we could know which scenario an assertion belongs to, a {\it concept}'s sentiment in a scenario can be determined from its assertions which belongs to the scenario. 
-
-To deal with the two problems, this paper develops a topic-aware propagation method for Chinese ConceptNet. We extract hidden contextual information by applying Latent Dirichlet Allocation~\cite{Blei:LDA03} to Chinese ConceptNet. Then we use the information to improve original sentiment propagation and predict topic-aware sentiment values for {\it concepts}. Then we present how to apply these topic-aware sentiment values of {\it concepts} to polarity classification for texts. Finally, experiments are conducted on dialogue dataset and microblog posts benchmark.
+\label{sec:introduction}
+\input{introduction}
 
 
 \section{Related Work}
-\subsection{Sentiment Prediction for ConceptNet}
-Random walk is commonly used to spread values on a graph~\cite{Wu:relSelect14,Hassan:ACL10,Xu:COLING10,Cambria:AAAI10}. It spreads values through synonym and antonym edges. The equation of random walk with restart is as follows:
-\begin{equation}
-\label{eq:rndWalk}
-\boldsymbol{s}_{t+1} = (1-\alpha)\boldsymbol{W}\boldsymbol{s}_t + \alpha\boldsymbol{s}_0
-\end{equation}
-where $\boldsymbol{s}_t$ is the values of each node when the $t$-th iteration. $\boldsymbol{W}$ is a similarity matrix, which can be acquired from sources like Ontology, ConceptNet, corpus, etc. Similarity matrix of a standard random walk is an out-link normalized matrix. $\alpha$ is the restarting weight. Random walk is an iterative process, and after $n$ iteration, each node spreads its value to the neighbors that are $n$ links distant from it.
+\label{sec:relatedwork}
+\input{relatedwork}
 
-In previous research~\cite{Tsai:IEEE13, Wu:relSelect14}, random walk is applied to propagate values on ConceptNet. They found that in ConceptNet, performing in-link normalized on similarity matrix is better than performing out-link normalized because out-link normalization will underestimate the influence of concepts with more neighbors. In in-link normalization, each concept's new sentiment value in the ($t+1$)-th iteration is the average of all its neighbors in the $t$-th iteration.
 
-\subsection{Latent Dirichlet Allocation}
-Latent Dirichlet Allocation (LDA)~\cite{Blei:LDA03} is a generative probabilistic model of a corpus, in which documents are represented as random mixtures over latent topics, and each topic is characterized by a distribution over words. The intuition behind LDA is that each document exhibits multiple topics. It exploits word co-occurrence information to capture latent topics in the corpus.
-
-In LDA, each document $d$ is represented by bag of words (so the order of words in a document is not considered), and each document is assumed to be generated by the following (given parameters of Dirichlet distribution $\boldsymbol{\alpha}$ and per-topic word distribution $\boldsymbol{\beta}$):
-\begin{enumerate}[]
-	\item Choose probability coefficients over topics $\boldsymbol{\theta}_d {\sim} Dir(\boldsymbol{\alpha})$
-	\item For each of the $N$ word positions $x_{d,n}$:
-	\begin{enumerate}
-		\item Choose a topic assignment $z_{d,n} {\sim} Multinomial(\boldsymbol{\theta})$
-		\item Choose a word $w_{d,n}$ conditioned on the chosen topic $z_{d,n}$ and the per-topic word distribution $\boldsymbol{\beta}_{z_{d,n}}$
-	\end{enumerate}
-\end{enumerate}
-
-From the generative process, the graphical model representation of basic LDA is shown in Figure~\ref{fig:LDA_model}. Observing word co-occurrence in each document, LDA infers topic probability coefficients $\boldsymbol{\theta}_d$ for each document and topic assignment $z_{d,n}$ for each word of each document to maximize the likelihood of this corpus. However, the posterior distribution is intractable for exact inference of each $\boldsymbol{theta}_d$ and $z_{d,n}$. Blei {\it et al.} use variational EM to infer these latent variables and find parameters $\boldsymbol{\alpha}$ and $\boldsymbol{\beta}$ to maximize the log likelihood of given corpus.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=2.5in]{fig/LDA_model.jpg}
-\caption{Graphical model representation of LDA.}
-\label{fig:LDA_model}
-\end{figure}
-
-Because the words coverage for each document is sparse, they smooth multinomial parameters $\boldsymbol{\beta}$ by generating $\boldsymbol{\beta}_k \sim Dir(\boldsymbol{\eta})$ for each topic, shown in Figure~\ref{fig:LDA_model2}. They infer $\boldsymbol{\beta}_k$ by modify the variational model, like inferring $\boldsymbol{\theta}_d$.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=2.5in]{fig/LDA_model2.jpg}
-\caption{Graphical model representation of smoothed LDA.}
-\label{fig:LDA_model2}
-\end{figure}
-
-As the result, LDA infers $\boldsymbol{\theta}_d$ for each document, $z_{d,n}$ for each word of document and $\boldsymbol{\beta}_k$ for each topic. Besides, it estimates $\boldsymbol{\alpha}$ and $\boldsymbol{\eta}$ as the model of this corpus.
 
 
 %==========================================
 \section{Topic-Aware Sentiment Value Prediction for Chinese ConceptNet}
-In topic models such as LDA, each abstract ``topic" is characterized by a distribution over words. Such topics are one kind of representation of contexts or scenarios. In this section, we aim to define the topics in Chinese ConceptNet and predict a sentiment value $\in [-1,1]$ on each topic for each concept. Figure~\ref{fig:system1} shows the architecture of our system.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=0.5\textwidth]{fig/system1.jpg}
-\caption{System Architecture.}
-\label{fig:system1}
-\end{figure}
-
-\subsection{Topic Analysis on ConceptNet}
-We choose LDA to estimate topics for two reasons: The first one is that LDA allows each document to exhibit multiple topics to different degrees. The second one is that there are corpus parameters after LDA estimation, and we can use these corpus parameters to infer a new document by running the E-step in LDA. 
-
-Similar to the assumption of generating a corpus in LDA, we assume that there is a topic distribution for each concept and its assertions are sampled from this distribution. We aim to find which topic each assertion comes from for each concept. Therefore, we try to apply LDA to find such latent information. 
-
-First, each concept forms a document using its neighbors such that these neighbors have one co-occurrence observation when LDA estimates. See Figure~\ref{fig:noWorkDoc} for illustration, the concept 'do not have to work' generates a document using neighbors as words, with a value indicating how many times the neighbor occurs in assertions.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=0.5\textwidth]{fig/noWorkDoc.jpg}
-\caption{The document generated by 'do not have to work'.}
-\label{fig:noWorkDoc}
-\end{figure}
-
-Then we apply LDA to find $\boldsymbol{\theta}_m$ for each document d$_m$ and $z_{m,n}$ for each word $w_{m,n}$ in d$_m$ based on this collection of $M$ documents. Words in each document stand for neighbors of concept, so each resulted $z_{m,n}$ indicates which topicID the neighbor $w_{m,n}$ comes from for concept $c_m$.
-
-As the result, we can design a topic assignment matrix, $\boldsymbol{T}$ where each entry $t_{i,j}$ is $z_{i,j}$ if $j$ is one of $i$'s neighbors, otherwise $unknown$. That is, we can check $t_{i,j}$ for which topicID $i$'s neighbor $j$ belongs to. 
-
-Here we present the result of applying LDA with 10 topics to Chinese ConceptNet. Figure~\ref{fig:wordTop20} shows the per-topic word distribution, $\boldsymbol{\beta}_k$. Each column shows the top 20 words of a topic.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=0.5\textwidth]{fig/wordTop20.jpg}
-\caption{The top 20 words of each topic.}
-\label{fig:wordTop20}
-\end{figure}
-
-\subsection{Collecting Sentiment Seeds}
-Sentiment seeds here are concepts whose sentiments are known. Common ways to collect sentiment seeds are compiling manually or using other existing sentiment dictionaries. Although concepts we consider here are in Chinese, we use words in Affective Norms for English Words (ANEW)~\cite{Bradley:ANEW99} as our seeds. One reason is its good quality: it was compiled manually by a group of Introductory Psychology class students and provides ratings for 1034 English words through a normative rating procedure. Another reason is that sentiments in ANEW is value-level. Value-level sentiments provide additional intensity information.
-
-We want to assign each concept a sentiment value $\in [-1,1]$ measuring how pleasant or unpleasant people feel about it, so we use the value in ``Pleasure" dimension. Values in ANEW are $\in [1,9]$, so we perform linear normalization on them to value $\in [-1,1]$.
-
-We apply Google Translate to translate all 1034 words in ANEW into Chinese. There may be multiple translations of a English word, we take all of them into account and verify manually. We verify whether the polarities of a English word and its translations are similar. To match more concepts in Chinese ConceptNet, we expand these translations by the approach in our previous research~\cite{Wu:TAAI11}. After expansion, we have 27842 Chinese phrases with sentiment values. In our experiment, there are totally 3047 of them match concepts in Chinese ConceptNet, and then these concepts are used as sentiment seeds.
-
-As the result, given totally $M$ concepts in ConceptNet, we generate a $M \times 1$ vector $\boldsymbol{s}_0$ to denote sentiment values of seed concepts. For each phrase in our expanded translations, if it appears in ConceptNet with concept ID $c$, the ($c$,1) entry of $\boldsymbol{s}_0$ is its linear normalized sentiment value in ANEW. Other entries are $unknown$.
-
-\subsection{Topic-Aware Sentiment Propagation}
-After topic analysis, we know which topic each neighbor of each concept comes from by topic assignment matrix $\boldsymbol{T}$. When we predict $c_m$'s sentiment value on the latent topic $z$, we consider neighbors which come from topic $z$ and use their sentiment values on topic $z$. 
-
-However, not all assertions are good for propagation. Next, We select sentiment related relation types and their directions by validation. More specifically, 10\% of positive/neutral/negative sentiment seeds are sampled as validation, and use the remaining 90\% to propagate. The result is shown in Table~\ref{table:relRule}.
-
-\begin{table}[]
-\centering
-\caption{Propagation rules on 13 relation types}
-\label{table:relRule}
-\begin{tabular}{|l|l|}
-\hline
-Relation Type    & Propagation rule  \\ \hline
-HasFirstSubevent & Not used  		 \\ \hline
-MadeOf 			 & Not used  		 \\ \hline
-IsA 			 & Not used  		 \\ \hline
-AtLocation 		 & Not used  		 \\ \hline
-UsedFor 		 & Not used  		 \\ \hline
-CapableOf 		 & Not used  		 \\ \hline
-MotivatedByGoal  & Latter to Former  \\ \hline
-Desires 		 & Not used          \\ \hline
-SymbolOf 		 & Former to Latter  \\ \hline
-CausesDesire 	 & Not used  		 \\ \hline
-Causes 			 & Both Direction    \\ \hline
-HasSubevent      & Former to Latter  \\ \hline
-PartOf           & Not used  		 \\ \hline
-\end{tabular}
-\end{table}
-
-Starting from seed concepts, we can use equation~\ref{eq:rndWalk} to iteratively propagate sentiment values on different topics. We design $\boldsymbol{W}$, the $M \times M$ propagation matrix by Algorithm~\ref{alg:wmatrix}. Each element $w_{i,j}$ denotes the weight of sentiment value propagation from concept $j$ to concept $i$.
-
-\begin{algorithm}[htb]
-  \caption{determine $\boldsymbol{W}$ for a given topic $z$}
-  \label{alg:wmatrix}
-  \begin{algorithmic}[1]
-  	\Require
-  		$z$: current topicID; 
-  		$\boldsymbol{T}$: topic assignment matrix;
-  		$\text{A} = \{(c1,c2,rel)\}$: all ConceptNet assertions;
-    \Ensure
-     	$M \times M$ propagation matrix $\boldsymbol{W}$;
-	\State initialize $M \times M$ matrix $\boldsymbol{W}$ with each entry $w_{i,j} = 0$    
-    \For{each assertion $(c_i,c_j,rel)$ in A}
-    \label{code:ruleStart}
-    	\State rule = searchPropagationRule($(c_i,c_j,rel)$);
-		\If{rule = ``Former to Latter"}
-			\State $w_{j,i} \pluseq 1$;
-		\ElsIf{rule = ``Latter to Former"}
-			\State $w_{i,j} \pluseq 1$;
-		\ElsIf{rule = ``Both Direction"}
-			\State $w_{j,i} \pluseq 1$, $w_{i,j} \pluseq 1$;
-		\EndIf
-	\EndFor
-	\label{code:ruleEnd}
-    
-    \For{each $t_{i,j}$ in $\boldsymbol{T}$}
-    \label{code:separateContextStart}
-		\If{$t_{i,j} \neq z$}
-			$w_{i,j} = 0$;
-			\Comment{For concept $i$, consider only neighbors in topic $z$}
-		\EndIf
-    \EndFor
-    \label{code:separateContextEnd}
-    \State \Return $\boldsymbol{W}$;
-  \end{algorithmic}
-\end{algorithm}
-
-We can design the propagation matrix for each topic and use it to propagate sentiment values separately. No matter which topic, propagation starts from $\boldsymbol{s}_0$ because the seeds are less ambiguous on different topics. In each iteration $i$, we perform in-link normalization to the propagation matrix. After propagating $iteration$ times, we have the final $\boldsymbol{s}_{iteration}$, which stands for the final sentiment values on topic $z$ for all concepts in ConceptNet. We set sentiment value to $0$ for concepts which are still labelled $unknown$ in $\boldsymbol{s}_{iteration}$. Then, this process repeats for other topics. Finally, each concept has a sentiment value $\in [-1,1]$ on each topic.
+\label{sec:method1}
+\input{method1}
 
 
 %==========================================
 \section{Topic Inference and Sentiment Value Selection}
-
+\label{sec:method2}
+\input{method2}
 
 \section{Experiment}
-
+\label{sec:experiment}
+\input{experiment}
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
@@ -699,7 +530,8 @@ We can design the propagation matrix for each topic and use it to propagate sent
 
 
 \section{Conclusion}
-The conclusion goes here.
+\label{sec:conclusion}
+\input{conclusion}
 
 
 
@@ -721,7 +553,7 @@ The conclusion goes here.
 % http://www.michaelshell.org/tex/ieeetran/bibtex/
 \bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
-\bibliography{IEEEabrv,taaibib}
+\bibliography{taaibib}
 %
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
