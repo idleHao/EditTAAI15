@@ -34,7 +34,7 @@ Here we present the result of applying LDA with 10 topics to Chinese ConceptNet.
 \label{fig:wordTop20}
 \end{figure}
 
-\subsection{Collecting Sentiment Seeds}
+\subsection{Sentiment Seeds Extraction}
 Sentiment seeds here are concepts whose sentiments are known. Common ways to collect sentiment seeds are compiling manually or using other existing sentiment dictionaries. Although concepts we consider here are in Chinese, we use words in Affective Norms for English Words (ANEW)~\cite{Bradley:ANEW99} as our seeds. One reason is its good quality: it was compiled manually by a group of Introductory Psychology class students and provides ratings for 1034 English words through a normative rating procedure. Another reason is that sentiments in ANEW is value-level. Value-level sentiments provide additional intensity information.
 
 We want to assign each concept a sentiment value $\in [-1,1]$ measuring how pleasant or unpleasant people feel about it, so we use the value in ``Pleasure" dimension. Values in ANEW are $\in [1,9]$, so we perform linear normalization on them to value $\in [-1,1]$.

@@ -1,0 +1,8 @@
+When predicting polarities for texts, concepts in the texts provide important information. For example, if 'F score', 'sad' and 'die' co-occur in a text, the text is more likely to be negative. We claim that when we want to know a concept's sentiment value, it's better to return a value based on the current topic, rather than a fixed value. For example, in the sentence 'The case is too sudden', 'sudden' reflects sentiment, but it is both possible to be positive and negative depending on the description about 'the case'. The description may consist of concepts such as 'surprise', 'nervous' and 'help'. Hence, we use co-occurring concepts to help us identify topics and sentiment values for a concept in texts.
+
+That is, given a query concepts $c_q$ and a set of co-occurring concepts COO $= \{(c_i, count_i) \mid c_i$ occurs $count_i$ times$\}$, the output is $(topic, val)$ where $topic$ is the topicID $c_q$ most likely belong to, and $val$ is the sentiment value $\in [-1, 1]$ of $c_q$ when $topic$.
+
+First, we combine $c_q$ and COO to form a document d$_q$, which is a set of tuples $(c_i, count_i)$ indicating $c_i$ occurs $count_i$ times in $c_q$ and COO. Next, we use the corpus LDA parameters $\boldsymbol{\alpha}$ and $\boldsymbol{\beta}_k$ trained using ConceptNet to infer d$_q$. By running the E-step, LDA estimates topic distribution of d$_q$ and the topic assignments for concepts in d$_q$. As the result, we know which topics $c_q$ and COO come from, and use the topic of $c_q$ to access the topic-aware sentiment results in section~\ref{sec:method1}. Finally, the most possible topic and sentiment value of $c_q$ is returned.
+
+
+
