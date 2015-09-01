@@ -1,0 +1,16 @@
+\subsection{Experimental Setup}
+In our experiment, we use the Chinese part of ConceptNet which we collect by ChickenPTT~\cite{Kuo:HCOMP09} until May, 19, 2015. There are totally 713139 assertions and 223871 concepts. 
+
+ANEW is used as our seeds. There are 1034 English words in ANEW. After our translation and expansion, these English words generate 27842 Chinese phrases. There are 3047 of them existing in ConceptNet. Among these 3047 concepts, there are 1654 positive, 1042 negative, 351 neutral according to sentiment values in ANEW. (After linear normalization, we define neutral using $\pm0.125$ as threshold.)
+
+\subsection{Experiment 1: Propagation on the Same Topic}
+This experiment aims to evaluate whether propagating on each topic separately is better than the original method which decides sentiment values from all neighbors together disregarding topics.
+
+\subsubsection{Experimental Design}
+From 3047 seed concepts, we sample 10\% of them to evaluate our propagation result and use the remaining 90\% as propagation seeds. To make the distributions of 10\% test data and the 90\% training data similar, we sample test data according to the proportions of positive, neutral and negative concepts. Therefore, in the test set there are totally 304 concepts where 165 of them are positive, 104 of them are negative and 35 of them are neutral.
+
+
+%===========================
+\subsection{Experiment 2: Polarity Classification for Posts of Microblog}
+
+\subsubsection{Experimental Settings}
