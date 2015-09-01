@@ -1,0 +1,702 @@
+% This file was created with JabRef 2.10.
+% Encoding: ISO8859_1
+
+
+@Inproceedings{Baccianella:LREC10,
+  Title                    = {SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining},
+  Author                   = {Baccianella, Stefano and Esuli, Andrea and Sebastiani, Fabrizio},
+  Booktitle                = {Proceedings of the Seventh Conference on International Language Resources and Evaluation},
+  Year                     = {2010},
+
+  Address                  = {Valletta, Malta},
+  Month                    = {May},
+  Publisher                = {European Language Resources Association (ELRA)},
+  Series                   = {LREC10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Baccianella_LREC10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.17}
+}
+
+@Article{Blei:ICML12,
+  Title                    = {Probabilistic topic models},
+  Author                   = {Blei, David M},
+  Journal                  = {Communications of the ACM},
+  Year                     = {2012},
+  Number                   = {4},
+  Pages                    = {77--84},
+  Volume                   = {55},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Blei_ICML12.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.01}
+}
+
+@Article{Blei:LDA03,
+  Title                    = {Latent dirichlet allocation},
+  Author                   = {Blei, David M and Ng, Andrew Y and Jordan, Michael I},
+  Journal                  = {The Journal of Machine Learning Research},
+  Year                     = {2003},
+
+  Month                    = {March},
+  Pages                    = {993--1022},
+  Volume                   = {3},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\BleiNgJordan_LDA_2003.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://dl.acm.org/citation.cfm?id=944919.944937}
+}
+
+@Inproceedings{Boia:AAAI14,
+  Title                    = {Acquiring Commonsense Knowledge for Sentiment Analysis through Human Computation},
+  Author                   = {Boia, Marina and Musat, Claudiu and Faltings, Boi},
+  Booktitle                = {Proceedings of the Twenty-Eighth AAAI Conference on Artificial Intelligence},
+  Year                     = {2014},
+  Pages                    = {901--907},
+  Series                   = {AAAI14},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Boia_AAAI14.pdf:PDF},
+  Keywords                 = {human computation; games with a purpose; crowdsourcing; commonsense knowledge; sentiment analysis; context},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.25},
+  Url                      = {http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8244}
+}
+
+@Article{Bradley:ANEW99,
+  Title                    = {Affective norms for English words (ANEW): Instruction manual and affective ratings},
+  Author                   = {Bradley, Margaret.M. and Lang, Peter J.},
+  Journal                  = {University of Florida: The Center for Research in Psychophysiology},
+  Year                     = {1999},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Bradley_ANEW99.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15}
+}
+
+@Inproceedings{Brody:HLT10,
+  Title                    = {An Unsupervised Aspect-sentiment Model for Online Reviews},
+  Author                   = {Brody, Samuel and Elhadad, Noemie},
+  Booktitle                = {Human Language Technologies: The 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics},
+  Year                     = {2010},
+
+  Address                  = {Stroudsburg, PA, USA},
+  Location                 = {Los Angeles, California},
+  Publisher                = {Association for Computational Linguistics},
+  Series                   = {HLT10},
+
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.20},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1857999.1858121}
+}
+
+@Inproceedings{Cambria:FLAIRS12,
+  Title                    = {SenticNet 2: A Semantic and Affective Resource for Opinion Mining and Sentiment Analysis.},
+  Author                   = {Cambria, Erik and Havasi, Catherine and Hussain, Amir},
+  Booktitle                = {FLAIRS conference},
+  Year                     = {2012},
+  Pages                    = {202--207},
+  Series                   = {FLAIRS12},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Cambria_FLAIRS12.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.17}
+}
+
+@Inproceedings{Cambria:COST09,
+  Title                    = {Sentic Computing: Exploitation of Common Sense for the Development of Emotion-sensitive Systems},
+  Author                   = {Cambria, Erik and Hussain, Amir and Havasi, Catherine and Eckl, Chris},
+  Booktitle                = {Proceedings of the Second International Conference on Development of Multimodal Interfaces: Active Listening and Synchrony},
+  Year                     = {2010},
+
+  Address                  = {Berlin, Heidelberg},
+  Location                 = {Dublin, Ireland},
+  Pages                    = {148--156},
+  Publisher                = {Springer-Verlag},
+  Series                   = {COST09},
+
+  Doi                      = {10.1007/978-3-642-12397-9_12},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Cambria_COST09_SenticComputing.pdf:PDF},
+  Keywords                 = {AI, NLP, analogies, common sense computing, emotion and affective UI, knowledge base management, semantic networks},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://dx.doi.org/10.1007/978-3-642-12397-9_12}
+}
+
+@Inproceedings{Cambria:AAAI14,
+  Title                    = {SenticNet 3: A common and common-sense knowledge base for cognition-driven sentiment analysis},
+  Author                   = {Cambria, Erik and Olsher, Daniel and Rajagopal, Dheeraj},
+  Booktitle                = {Proceedings of AAAI, Quebec City},
+  Year                     = {2014},
+  Location                 = {Québec Convention Center, Québec City, Québec, Canada},
+  Month                    = {July},
+  Pages                    = {1515--1521},
+  Series                   = {AAAI14},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Cambria_AAAI14.pdf:PDF},
+  Keywords                 = {SenticNet; concept-level sentiment analysis; biologically-inspired opinion mining; sentic computing; knowledge representation},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8479}
+}
+
+@Inproceedings{Cambria:AAAI10,
+  Title                    = {SenticNet: A Publicly Available Semantic Resource for Opinion Mining},
+  Author                   = {Cambria, Erik and Speer, Robert and Havasi, Catherine and Hussain, Amir},
+  Booktitle                = {AAAI fall symposium: commonsense knowledge},
+  Year                     = {2010},
+  Location                 = {Westin Arlington Gateway in Arlington, Virginia},
+  Month                    = {Nov.},
+  Pages                    = {14--18},
+  Series                   = {AAAI10},
+  Volume                   = {10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Cambria_AAAI10.pdf:PDF},
+  Keywords                 = {AI; Semantic Web, Opinion Mining},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {https://www.aaai.org/ocs/index.php/FSS/FSS10/paper/view/2216}
+}
+
+@Inproceedings{Chen:COLING10,
+  Title                    = {E-HowNet and Automatic Construction of a Lexical Ontology},
+  Author                   = {Chen, Wei-Te and Lin, Su-Chu and Huang, Shu-Ling and Chung, You-Shan and Chen, Keh-Jiann},
+  Booktitle                = {Proceedings of the 23rd International Conference on Computational Linguistics: Demonstrations},
+  Year                     = {2010},
+
+  Address                  = {Stroudsburg, PA, USA},
+  Location                 = {Beijing, China},
+  Publisher                = {Association for Computational Linguistics},
+  Series                   = {COLING10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Chen_COLING10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.18},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1944284.1944296}
+}
+
+@Inproceedings{Dong:COLING10,
+  Title                    = {HowNet and Its Computation of Meaning},
+  Author                   = {Dong, Zhendong and Dong, Qiang and Hao, Changling},
+  Booktitle                = {Proceedings of the 23rd International Conference on Computational Linguistics: Demonstrations},
+  Year                     = {2010},
+
+  Address                  = {Stroudsburg, PA, USA},
+  Location                 = {Beijing, China},
+  Pages                    = {53--56},
+  Publisher                = {Association for Computational Linguistics},
+  Series                   = {COLING10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Dong_COLING10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.18},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1944284.1944298}
+}
+
+@Inproceedings{Esuli:LREC06,
+  Title                    = {Sentiwordnet: A publicly available lexical resource for opinion mining},
+  Author                   = {Esuli, Andrea and Sebastiani, Fabrizio},
+  Booktitle                = {In Proceedings of the 5th Conference on Language Resources and Evaluation},
+  Year                     = {2006},
+  Pages                    = {417--422},
+  Series                   = {LREC06},
+  Volume                   = {6},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Esuli_LREC06.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.17}
+}
+
+@Inproceedings{Hassan:ACL10,
+  Title                    = {Identifying Text Polarity Using Random Walks},
+  Author                   = {Hassan, Ahmed and Radev, Dragomir},
+  Booktitle                = {Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics},
+  Year                     = {2010},
+
+  Address                  = {Stroudsburg, PA, USA},
+  Location                 = {Uppsala, Sweden},
+  Pages                    = {395--403},
+  Publisher                = {Association for Computational Linguistics},
+  Series                   = {ACL10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Hassan_ACL10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.03},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1858681.1858722}
+}
+
+@Inproceedings{Havasi:RANLP07,
+  Title                    = {ConceptNet 3: a Flexible, Multilingual Semantic Network for Common Sense Knowledge},
+  Author                   = {Havasi, Catherine and Speer, Robert and Alonso, Jason},
+  Booktitle                = {Recent Advances in Natural Language Processing},
+  Year                     = {2007},
+
+  Address                  = {Borovets, Bulgaria},
+  Month                    = {Sep.},
+  Series                   = {RANLP07},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Havasi_RANLP07.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.09}
+}
+
+@Article{Huang:cwn10,
+  Title                    = {Chinese Wordnet: Design, implementation, and application of an infrastructure for cross-lingual knowledge processing},
+  Author                   = {Huang, JR and Hsieh, Shu-Kai and Hong, Jia-Fei and Chen, Yun-Zhu and Su, I-Li and Chen, Yong-Xiang and Huang, Sheng-Wei},
+  Journal                  = {Journal of Chinese Information Processing},
+  Year                     = {2010},
+  Number                   = {2},
+  Pages                    = {14--23},
+  Volume                   = {24},
+
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.09}
+}
+
+@Article{Ku:ntusd07,
+  Title                    = {Mining Opinions from the web: Beyond Relevance Retrieval},
+  Author                   = {Ku, Lun-Wei and Chen, Hsin Hsi},
+  Journal                  = {Journal of the American Society for Information Science and Technology},
+  Year                     = {2007},
+
+  Month                    = {Oct.},
+  Number                   = {12},
+  Pages                    = {1838--1850},
+  Volume                   = {58},
+
+  Doi                      = {10.1002/asi.v58:12},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Ku_ntusd07_2.pdf:PDF;:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Ku_ntusd07.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://dx.doi.org/10.1002/asi.v58:12}
+}
+
+@Inproceedings{Kuo:HCOMP09,
+  Title                    = {Community-based Game Design: Experiments on Social Games for Commonsense Data Collection},
+  Author                   = {Kuo, Yen-ling and Chiang, Kai-yang and Chan, Cheng-wei and Lee, Jong-Chuan and Wang, Rex and Shen, Edward and Hsu, Jane Yung-jen},
+  Booktitle                = {KDD-09 Workshop on Human Computation},
+  Year                     = {2009},
+
+  Address                  = {New York, NY, USA},
+  Location                 = {Paris, France},
+  Month                    = {June},
+  Pages                    = {15--22},
+  Publisher                = {ACM},
+  Series                   = {HCOMP09},
+
+  Doi                      = {10.1145/1600150.1600154},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Kuo_HCOMP09.pdf:PDF},
+  Keywords                 = {human computation, games with a purpose, online community, social interaction},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.04},
+  Url                      = {http://doi.acm.org/10.1145/1600150.1600154}
+}
+
+@Inproceedings{Kuo:FSS10,
+  Title                    = {Goal-Oriented Knowledge Collection.},
+  Author                   = {Kuo, Yen-Ling and Hsu, Jane Yung-jen},
+  Booktitle                = {AAAI Fall Symposium: Commonsense Knowledge},
+  Year                     = {2010},
+  Month                    = {November},
+  Series                   = {FSS10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Kuo_FSS10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.04},
+  Url                      = {https://www.aaai.org/ocs/index.php/FSS/FSS10/paper/download/2278/2605}
+}
+
+@Article{Lang:behavioral80,
+  Title                    = {Behavioral treatment and bio-behavioral assessment: Computer applications},
+  Author                   = {Lang, Peter J},
+  Journal                  = {Technology in Mental Health Care Delivery Systems},
+  Year                     = {1980},
+  Pages                    = {119--137},
+
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Lee:IJCNLP2011,
+  Title                    = {Chinese sentiment analysis using maximum entropy},
+  Author                   = {Lee, Huey Yee and ePulze Sdn Bhd, C and Block, C and Renganathan, Hemnaath},
+  Journal                  = {Sentiment Analysis where AI meets Psychology (SAAIP)},
+  Year                     = {2011},
+
+  Month                    = {Nov.},
+  Pages                    = {89--93},
+
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.08}
+}
+
+@Inproceedings{Li:ROCLING11,
+  Title                    = {Predicting the semantic orientation of terms in E-HowNet},
+  Author                   = {Li, Cheng-Ru and Yu, Chi-Hsin and Chen, Hsin-Hsi},
+  Booktitle                = {Proceedings of the 23rd Conference on Computational Linguistics and Speech Processing},
+  Year                     = {2011},
+
+  Address                  = {Stroudsburg, PA, USA},
+  Location                 = {Taipei, China},
+  Pages                    = {151--165},
+  Publisher                = {Association for Computational Linguistics},
+  Series                   = {ROCLING11},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Li_ROCLING11.pdf:PDF},
+  Keywords                 = {E-NowNet, SVM, semantic orientation, sentiment analysis, sentiment dictionary},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://dl.acm.org/citation.cfm?id=2207055.2207068}
+}
+
+@Book{Liu:Sentiment12,
+  Title                    = {Sentiment analysis and opinion mining},
+  Author                   = {Liu, Bing},
+  Publisher                = {MORGAN\&CLAYPOOL},
+  Year                     = {2012},
+  Month                    = {May},
+  Series                   = {Sentiment12},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\LiuB_Sentiment12.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2014.12.15},
+  Url                      = {http://www.morganclaypool.com/doi/abs/10.2200/S00416ED1V01Y201204HLT016}
+}
+
+@Inproceedings{Liu:IUI03,
+  Title                    = {A Model of Textual Affect Sensing Using Real-world Knowledge},
+  Author                   = {Liu, Hugo and Lieberman, Henry and Selker, Ted},
+  Booktitle                = {Proceedings of the 8th International Conference on Intelligent User Interfaces},
+  Year                     = {2003},
+
+  Address                  = {New York, NY, USA},
+  Location                 = {Miami, Florida, USA},
+  Pages                    = {125--132},
+  Publisher                = {ACM},
+  Series                   = {IUI03},
+
+  Doi                      = {10.1145/604045.604067},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Liu_IUI03.pdf:PDF},
+  Keywords                 = {affective UI, affective computing, commonsense reasoning, emotions, open mind commonsense, story understanding},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.19},
+  Url                      = {http://doi.acm.org/10.1145/604045.604067}
+}
+
+@Inproceedings{Lu:ICDMW11,
+  Title                    = {Multi-aspect Sentiment Analysis with Topic Models},
+  Author                   = {Lu, Bin and Ott, Myle and Cardie, Claire and Tsou, Benjamin K.},
+  Booktitle                = {Proceedings of the 2011 IEEE 11th International Conference on Data Mining Workshops},
+  Year                     = {2011},
+
+  Address                  = {Washington, DC, USA},
+  Publisher                = {IEEE Computer Society},
+  Series                   = {ICDMW11},
+
+  Doi                      = {10.1109/ICDMW.2011.125},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Lu_ICDMW11.pdf:PDF},
+  Keywords                 = {multi-aspect sentiment analysis, topic modeling},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://dx.doi.org/10.1109/ICDMW.2011.125}
+}
+
+@Inproceedings{Lu:WWW11,
+  Title                    = {Automatic Construction of a Context-aware Sentiment Lexicon: An Optimization Approach},
+  Author                   = {Lu, Yue and Castellanos, Malu and Dayal, Umeshwar and Zhai, ChengXiang},
+  Booktitle                = {Proceedings of the 20th International Conference on World Wide Web},
+  Year                     = {2011},
+
+  Address                  = {New York, NY, USA},
+  Location                 = {Hyderabad, India},
+  Month                    = {March},
+  Pages                    = {347--356},
+  Publisher                = {ACM},
+  Series                   = {WWW11},
+
+  Doi                      = {10.1145/1963405.1963456},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Lu_www11_contextOpt.pdf:PDF},
+  Keywords                 = {opinion mining, optimization, sentiment analysis, sentiment lexicon},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://doi.acm.org/10.1145/1963405.1963456}
+}
+
+@Misc{Mei:Cilin82,
+  Title                    = {tong2yi4ci2ci2lin2},
+
+  Author                   = {Mei, J and Zhu, Y and Gao, Y and Yin, H},
+  HowPublished             = {Shanghai Dictionary Press},
+  Year                     = {1982},
+
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.19}
+}
+
+@Article{Miller:WordNet95,
+  Title                    = {WordNet: A Lexical Database for English},
+  Author                   = {Miller, George A.},
+  Journal                  = {Communications of the ACM},
+  Year                     = {1995},
+
+  Month                    = {Nov.},
+  Number                   = {11},
+  Pages                    = {39--41},
+  Volume                   = {38},
+
+  Doi                      = {10.1145/219717.219748},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Miller_WordNet95.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.17},
+  Url                      = {http://doi.acm.org/10.1145/219717.219748}
+}
+
+@Inproceedings{Mohammad:CAAGET10,
+  Title                    = {Emotions Evoked by Common Words and Phrases: Using Mechanical Turk to Create an Emotion Lexicon},
+  Author                   = {Mohammad, Saif M. and Turney, Peter D.},
+  Booktitle                = {Proceedings of the NAACL HLT 2010 Workshop on Computational Approaches to Analysis and Generation of Emotion in Text},
+  Year                     = {2010},
+
+  Address                  = {Stroudsburg, PA, USA},
+  Location                 = {Los Angeles, California},
+  Pages                    = {26--34},
+  Publisher                = {Association for Computational Linguistics},
+  Series                   = {CAAGET10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Mohammad_CAAGET10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1860631.1860635}
+}
+
+@Inproceedings{Rao:WWW14,
+  Title                    = {Building emotional dictionary for sentiment analysis of online news},
+  Author                   = {Rao, Yanghui and Lei, Jingsheng and Liu, Wenyin and Li, Qing and Chen, Mingliang},
+  Booktitle                = {World Wide Web 2014},
+  Year                     = {2014},
+  Month                    = {July},
+  Pages                    = {723--742},
+  Publisher                = {Springer},
+  Series                   = {WWW14},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Rao_WWW14.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.01.12},
+  Url                      = {http://link.springer.com/article/10.1007%2Fs11280-013-0221-9}
+}
+
+@Article{Rao:topicModelSocial,
+  Title                    = {Sentiment Topic Models for Social Emotion Mining},
+  Author                   = {Rao, Yanghui and Li, Qing and Mao, Xudong and Wenyin, Liu},
+  Journal                  = {Information Sciences: an International Journal},
+  Year                     = {2014},
+
+  Month                    = {May},
+  Pages                    = {90--100},
+  Volume                   = {266},
+
+  Doi                      = {10.1016/j.ins.2013.12.059},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Rao_topicModelSocial.pdf:PDF},
+  Keywords                 = {Sentiment topic model, Social emotion classification, Social emotion lexicon, Social emotion mining},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://dx.doi.org/10.1016/j.ins.2013.12.059}
+}
+
+@Inproceedings{Singh:OMCS02,
+  Title                    = {Open Mind Common Sense: Knowledge Acquisition from the General Public},
+  Author                   = {Singh, Push and Lin, Thomas and Mueller, Erik T. and Lim, Grace and Perkins, Travell and Zhu, Wan Li},
+  Booktitle                = {On the Move to Meaningful Internet Systems, 2002},
+  Year                     = {2002},
+
+  Address                  = {London, UK, UK},
+  Pages                    = {1223--1237},
+  Publisher                = {Springer-Verlag},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Singh_OMCS02.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.09},
+  Url                      = {http://dl.acm.org/citation.cfm?id=646748.701499}
+}
+
+@Inproceedings{Speer:LREC12,
+  Title                    = {Representing General Relational Knowledge in ConceptNet 5},
+  Author                   = {Robert Speer and Catherine Havasi},
+  Booktitle                = {Proceedings of the Eight International Conference on Language Resources and Evaluation},
+  Year                     = {2012},
+
+  Address                  = {Istanbul, Turkey},
+  Month                    = {May},
+  Publisher                = {European Language Resources Association (ELRA)},
+  Series                   = {LREC12},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Speer_LREC12.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.08},
+  Url                      = {http://www.lrec-conf.org/proceedings/lrec2012/pdf/1072_Paper.pdf}
+}
+
+@Inproceedings{Strapparava:IREC04,
+  Title                    = {WordNet-Affect: an Affective Extension of WordNet},
+  Author                   = {Strapparava, Carlo and Valitutti, Alessandro},
+  Booktitle                = {Proceedings of the 4th International Conference on Language Resources and Evaluation},
+  Year                     = {2004},
+  Pages                    = {1083-1086},
+  Series                   = {IREC04},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Strapparava_lREC04.pdf:PDF},
+  Keywords                 = {analysis sentiment subjectivity},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.16}
+}
+
+@Article{Taboada:lexiconBased11,
+  Title                    = {Lexicon-based Methods for Sentiment Analysis},
+  Author                   = {Taboada, Maite and Brooke, Julian and Tofiloski, Milan and Voll, Kimberly and Stede, Manfred},
+  Journal                  = {Comput. Linguist.},
+  Year                     = {2011},
+
+  Month                    = {June},
+  Number                   = {2},
+  Pages                    = {267--307},
+  Volume                   = {37},
+
+  Doi                      = {10.1162/COLI_a_00049},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Taboada_lexiconBased11.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.08},
+  Url                      = {http://dx.doi.org/10.1162/COLI_a_00049}
+}
+
+@Inproceedings{Tsai:IEEE13,
+  Title                    = {Building a Concept-Level Sentiment Dictionary Based on Commonsense Knowledge},
+  Author                   = {Tsai, Angela Charng-Rurng and Wu, Chi-En and Tsai, Richard Tzong-Han and Hsu, Jane Yung-jen},
+  Booktitle                = {IEEE Intelligent Systems},
+  Year                     = {2013},
+  Month                    = {Feb.},
+  Pages                    = {22--30},
+  Publisher                = {IEEE},
+  Series                   = {IEEE13},
+  Volume                   = {28},
+
+  Doi                      = {10.1109/MIS.2013.25},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Tsai_IEEE13.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.01.21},
+  Url                      = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6461369}
+}
+
+@Article{Weichselbraun:IEEE_ISJournal13,
+  Title                    = {Extracting and Grounding Context-Aware Sentiment Lexicons},
+  Author                   = {Weichselbraun, Albert and Gindl, Stefan and Scharl, Arno},
+  Journal                  = {IEEE Intelligent Systems},
+  Year                     = {2013},
+  Number                   = {2},
+  Pages                    = {39--46},
+  Volume                   = {28},
+
+  Doi                      = {10.1109/MIS.2013.41},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Weichselbraun_IEEE_ISJournal13.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.06.15},
+  Url                      = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6547969}
+}
+
+@Inproceedings{Wen:AAAI14,
+  Title                    = {Emotion Classification in Microblog Texts Using Class Sequential Rules},
+  Author                   = {Wen, Shiyang and Wan, Xiaojun},
+  Booktitle                = {AAAI Conference on Artificial Intelligence 2014},
+  Year                     = {2014},
+  Publisher                = {AAAI Conference on Artificial Intelligence},
+  Series                   = {AAAI14},
+
+  File                     = {:Wen_AAAI14.pdf:PDF},
+  Keywords                 = {Emotion Classification; Class Sequential Rule},
+  Owner                    = {IdleHao},
+  Timestamp                = {2014.11.28},
+  Url                      = {http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8209}
+}
+
+@Article{Wu:relSelect14,
+  Title                    = {Using relation selection to improve value propagation in a ConceptNet-based sentiment dictionary},
+  Author                   = {Wu, Chi-En and Tsai, Richard Tzong-Han},
+  Journal                  = {Knowledge-Based Systems},
+  Year                     = {2014},
+  Pages                    = {100--107},
+  Volume                   = {69},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Wu_relSelect14.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.07.04},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0950705114001737}
+}
+
+@Inproceedings{Wu:TAAI11,
+  Title                    = {Sentiment Value Propagation for an Integral Sentiment Dictionary Based on Commonsense Knowledge},
+  Author                   = {Wu, Hui-Hsin and Tsai, Angela Charng-Rurng and Tsai, Richard Tzong-Han and Hsu, Jane Yung-jen},
+  Booktitle                = {Proceedings of the 2011 International Conference on Technologies and Applications of Artificial Intelligence},
+  Year                     = {2011},
+  Pages                    = {75--81},
+  Series                   = {TAAI11},
+
+  Doi                      = {10.1109/TAAI.2011.21},
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Wu_TAAI11.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.01.21},
+  Url                      = {http://dl.acm.org/citation.cfm?id=2121854}
+}
+
+@Inproceedings{Xu:COLING10,
+  Title                    = {Build Chinese Emotion Lexicons Using a Graph-based Algorithm and Multiple Resources},
+  Author                   = {Xu, Ge and Meng, Xinfan and Wang, Houfeng},
+  Booktitle                = {Proceedings of the 23rd International Conference on Computational Linguistics},
+  Year                     = {2010},
+
+  Address                  = {Stroudsburg, PA, USA},
+  Location                 = {Beijing, China},
+  Pages                    = {1209--1217},
+  Publisher                = {Association for Computational Linguistics},
+  Series                   = {COLING'10},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Xu_COLING10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2014.11.14},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1873781.1873917}
+}
+
+@Inproceedings{Xu:PACLIC10,
+  Title                    = {Expanding Chinese sentiment dictionaries from large scale unlabeled corpus},
+  Author                   = {Xu, Hongzhi and Zhao, Kai and Qiu, Likun and Hu, Changjian},
+  Booktitle                = {PACLIC 24 Proceedings},
+  Year                     = {2010},
+  Pages                    = {301--310},
+  Publisher                = {ACL},
+  Series                   = {PACLIC10},
+  Volume                   = {24},
+
+  File                     = {:D\:\\idleHao\\serious\\university\\lab\\paperCollection\\Xu_PACLIC10.pdf:PDF},
+  Owner                    = {IdleHao},
+  Timestamp                = {2015.01.14},
+  Url                      = {http://www.aclweb.org/anthology/Y10-1034}
+}
+
+@comment{jabref-meta: groupsversion:3;}
+
+@comment{jabref-meta: groupstree:
+0 AllEntriesGroup:;
+1 ExplicitGroup:Dictionary Construction\;2\;Bradley:ANEW99\;Cambria:AA
+AI10\;Cambria:AAAI14\;Cambria:COST09\;Cambria:FLAIRS12\;Hassan:ACL10\;
+Ku:ntusd07\;Li:ROCLING11\;Liu:IUI03\;Mohammad:CAAGET10\;Tsai:IEEE13\;W
+u:TAAI11\;Wu:relSelect14\;Xu:COLING10\;Xu:PACLIC10\;;
+1 ExplicitGroup:Context-aware\;2\;Blei:ICML12\;Blei:LDA03\;Boia:AAAI14
+\;Brody:HLT10\;Lu:ICDMW11\;Lu:WWW11\;Rao:WWW14\;Rao:topicModelSocial\;
+Weichselbraun:IEEE_ISJournal13\;;
+1 ExplicitGroup:Previous Research\;2\;Tsai:IEEE13\;Wu:TAAI11\;;
+1 ExplicitGroup:Tools\;2\;Baccianella:LREC10\;Chen:COLING10\;Dong:COLI
+NG10\;Esuli:LREC06\;Havasi:RANLP07\;Huang:cwn10\;Kuo:FSS10\;Kuo:HCOMP0
+9\;Lang:behavioral80\;Mei:Cilin82\;Miller:WordNet95\;Singh:OMCS02\;Spe
+er:LREC12\;Strapparava:IREC04\;;
+1 ExplicitGroup:Predict\;2\;Lee:IJCNLP2011\;Taboada:lexiconBased11\;We
+n:AAAI14\;;
+}
+
