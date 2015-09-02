@@ -16,7 +16,7 @@ In LDA, each document $d$ is represented by bag of words (so the order of words 
 	\item Choose probability coefficients over topics $\boldsymbol{\theta}_d {\sim} Dir(\boldsymbol{\alpha})$
 	\item For each of the $N$ word positions $x_{d,n}$:
 	\begin{enumerate}
-		\item Choose a topic assignment $z_{d,n} {\sim} Multinomial(\boldsymbol{\theta})$
+		\item Assign a topic $z_{d,n} {\sim} Multinomial(\boldsymbol{\theta})$
 		\item Choose a word $w_{d,n}$ conditioned on the chosen topic $z_{d,n}$ and the per-topic word distribution $\boldsymbol{\beta}_{z_{d,n}}$
 	\end{enumerate}
 \end{enumerate}
