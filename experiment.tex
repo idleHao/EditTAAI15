@@ -55,5 +55,30 @@ Some of test concepts didn't get sentiment values when propagation and are consi
 
 %===========================
 \subsection{Experiment 2: Polarity Classification for Posts of Microblog}
+This experiment aims to investigate the effect of using topic-aware sentiments of concepts to predict polarities of texts. 
 
-\subsubsection{Experimental Settings}
+\subsubsection{Test Data}
+The benchmark dataset is from the Chinese Microblog Sentiment Analysis Evaluation (CMSAE) task in the conference on Natural Language Processing \& Chinese Computing (NLP \& CC) 2013 \footnote{\url{http://tcci.ccf.org.cn/conference/2013/pages/page04_dg.html}}.
+
+The original task in NLP \& CC is to recognize the emotion types of Chinese microblog texts collected from Sina Weibo. The seven emotion types are: {\it anger}, {\it disgust}, {\it fear}, {\it happiness}, {\it like}, {\it sadness}, and {\it surprise}. If the text has no emotion, it is labelled as {\it none}. The test dataset contains 10000 microblog texts and 32185 sentences. Each text is labelled a primary emotion type and a possible secondary emotion type. 
+
+Because our system is designed for recognizing the polarity, we reduce the emotion types into polarities. The emotion types {\it anger}, {\it disgust}, {\it fear} and {\it sadness} are mapped to {\it negative}. The emotion types {\it happiness} and {\it like} are mapped to {\it positive}. We map {\it surprise} and {\it none} to {\it neutral}. For each text, we use the primary emotion as its label. We use the secondary emotion as its label only when the primary emotion is {\it neutral}. For example, if a text is labelled {\it surprise} (primary) and {\it disgust} (secondary), its polarity is {\it negative}. The distribution of microblog texts is shown in TABLE~\ref{table:microblogDist}.
+
+\begin{table}[]
+\centering
+\caption{Distribution of Chinese microblog texts in the test set}
+\label{table:microblogDist}
+\begin{tabular}{|l|l|l|l|}
+\hline
+positive & neutral & negative & total \\ \hline
+2235 & 1913 & 5852 & 10000  \\ \hline
+\end{tabular}
+\end{table} 
+
+\subsubsection{Evaluation Metrics}
+
+\subsubsection{Post-Processing}
+
+
+\subsubsection{Results and Discussion}
+

@@ -46,7 +46,7 @@ As the result, given totally $M$ concepts in ConceptNet, we generate a $M \times
 \subsection{Topic-Aware Sentiment Propagation}
 After topic analysis, we know which topic each neighbor of each concept comes from by topic assignment matrix $\boldsymbol{T}$. When we predict $c_m$'s sentiment value on the latent topic $z$, we consider neighbors which come from topic $z$ and use their sentiment values on topic $z$. 
 
-However, not all assertions are good for propagation. Next, We select sentiment related relation types and their directions by validation. More specifically, 10\% of positive/neutral/negative sentiment seeds are sampled as validation, and use the remaining 90\% to propagate. The result is shown in Table~\ref{table:relRule}.
+However, not all assertions are good for propagation. Next, We select sentiment related relation types and their directions by validation. More specifically, 10\% of positive/neutral/negative sentiment seeds are sampled as validation, and use the remaining 90\% to propagate. The result is shown in TABLE~\ref{table:relRule}.
 
 \begin{table}[]
 \centering
