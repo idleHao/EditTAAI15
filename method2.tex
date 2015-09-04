@@ -2,7 +2,7 @@ When predicting polarities for texts, concepts in the texts provide important in
 
 That is, given a query concepts $c_q$ and a set of co-occurring concepts COO $= \{(c_i, count_i) \mid c_i$ occurs $count_i$ times$\}$, the output is $(topic, val)$ where $topic$ is the topicID $c_q$ most likely belong to, and $val$ is the sentiment value $\in [-1, 1]$ of $c_q$ when $topic$.
 
-First, we combine $c_q$ and COO to form a document d$_q$, which is a set of tuples $(c_i, count_i)$ indicating $c_i$ occurs $count_i$ times in $c_q$ and COO. Next, we use the corpus LDA parameters $\boldsymbol{\alpha}$ and $\boldsymbol{\beta}_k$ trained using ConceptNet to infer d$_q$. By running the E-step, LDA estimates topic distribution of d$_q$ and the topic assignments for concepts in d$_q$. As the result, we know which topics $c_q$ and COO come from, and use the topic of $c_q$ to access the topic-aware sentiment results in section~\ref{sec:method1}. Finally, the most possible topic and sentiment value of $c_q$ is returned.
+First, we combine $c_q$ and COO to form a document d$_q$, which is a set of tuples $(c_i, count_i)$ indicating $c_i$ occurs $count_i$ times in $c_q$ and COO. Next, we use the corpus LDA parameters $\boldsymbol{\alpha}$ and $\boldsymbol{\beta}_k$ trained using ConceptNet to infer d$_q$. By running the E-step, LDA estimates topic distribution of d$_q$ and the topic assignments for concepts in d$_q$. Therefore, we know which topics $c_q$ and COO come from, and use the topic of $c_q$ to access the topic-aware sentiment results in section~\ref{sec:method1}. Finally, the most possible topic and sentiment value of $c_q$ is returned.
 
 
 
